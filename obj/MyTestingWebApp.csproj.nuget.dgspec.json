@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rezazade-kh\\Desktop\\Nikrou_Jobs\\.Net_WebApp_Projects\\MyTestingWebApp\\MyTestingWebApp.csproj": {}
+    "C:\\Users\\MobiNick\\Desktop\\website\\.net_learning\\mytestingapp\\MyTestingWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rezazade-kh\\Desktop\\Nikrou_Jobs\\.Net_WebApp_Projects\\MyTestingWebApp\\MyTestingWebApp.csproj": {
+    "C:\\Users\\MobiNick\\Desktop\\website\\.net_learning\\mytestingapp\\MyTestingWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rezazade-kh\\Desktop\\Nikrou_Jobs\\.Net_WebApp_Projects\\MyTestingWebApp\\MyTestingWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\MobiNick\\Desktop\\website\\.net_learning\\mytestingapp\\MyTestingWebApp.csproj",
         "projectName": "MyTestingWebApp",
-        "projectPath": "C:\\Users\\rezazade-kh\\Desktop\\Nikrou_Jobs\\.Net_WebApp_Projects\\MyTestingWebApp\\MyTestingWebApp.csproj",
-        "packagesPath": "C:\\Users\\rezazade-kh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rezazade-kh\\Desktop\\Nikrou_Jobs\\.Net_WebApp_Projects\\MyTestingWebApp\\obj\\",
+        "projectPath": "C:\\Users\\MobiNick\\Desktop\\website\\.net_learning\\mytestingapp\\MyTestingWebApp.csproj",
+        "packagesPath": "C:\\Users\\MobiNick\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MobiNick\\Desktop\\website\\.net_learning\\mytestingapp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\rezazade-kh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MobiNick\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -38,6 +35,26 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SQLite": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

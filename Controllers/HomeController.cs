@@ -28,15 +28,18 @@ namespace MyTestingWebApp.Controllers
             return View();
         }
 
-        public IActionResult insertest(string testname, string testtype, string testxpath1, string testxpath2,string teststatus)
+        public IActionResult insertest(testdetail test)
         {
-            testdetail test = new testdetail();
-            test.testname = testname;
-            test.testtype = testtype;
-            test.testxpath1 = testxpath1;
-            test.testxpath2 = testxpath2;
-            test.teststatus = teststatus;
+            if (ModelState.IsValid == true)
+            {
+                //true
+            }
+            else
+            {
+                //false
+            }
 
+        
             return View("addtest");
         }
 

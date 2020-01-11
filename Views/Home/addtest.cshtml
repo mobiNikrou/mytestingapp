@@ -8,32 +8,32 @@
     <form action="insertest" method="post">
     
     <div class="form-group">
-        <label for="testtitle">Test Title</label>
-        <input  type="text" class="form-control" id="testtitle" aria-describedby="testtitleHelp" placeholder="Enter Test Title" name="testname">
-        <small id="testtitleHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <label for="testname">Test Name</label>
+       @Html.TextBox("testname", null, new { @class = "form-control", @placeholder="Enter Test Title"})
+        <small id="testname" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     
     <div class="form-group">
         <label for="testtype">Test Type</label>
-        <input  type="text" class="form-control" id="testtype" aria-describedby="testtypeHelp" placeholder="Enter Test Type" name="testtype">
-        <small id="testtypeHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        @Html.TextBox("testtype", null, new { @class = "form-control", @placeholder="Enter Test Type"})
+        <small id="testtype" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
 
     <div class="form-group">
         <label for="testxpath1">Element Xpath1</label>
-        <input  type="text" class="form-control" id="testxpath1" aria-describedby="testxpath1Help" placeholder="Enter Test Xpath1" name="testxpath1">
-        <small id="testxpath1Help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        @Html.TextBox("testxpath1", null, new { @class = "form-control", @placeholder="Enter Test Xpath1"})
+        <small id="testxpath1" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
 
     <div class="form-group">
         <label for="testxpath2">Element Xpath2</label>
-        <input  type="text" class="form-control" id="testxpath2" aria-describedby="testxpath2Help" placeholder="Enter Test Xpath2" name="testxpath2">
-        <small id="testxpath2Help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        @Html.TextBox("testxpath2", null, new { @class = "form-control", @placeholder="Enter Test Xpath2"})
+        <small id="testxpath2" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
 
     <div class="form-group">
         <label for="teststatus">Test Status</label>
-        <input  type="text" class="form-control" id="teststatus" aria-describedby="testxpath2Help" placeholder="Enter Test Status" name="teststatus">
+         @Html.TextBox("teststatus", null, new { @class = "form-control", @placeholder="Enter Test Status"})
         <small id="teststatus" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
 

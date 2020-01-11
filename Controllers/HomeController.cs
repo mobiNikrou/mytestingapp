@@ -37,7 +37,7 @@ namespace MyTestingWebApp.Controllers
             test.testxpath2 = testxpath2;
             test.teststatus = teststatus;
 
-            return View();
+            return View("addtest");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

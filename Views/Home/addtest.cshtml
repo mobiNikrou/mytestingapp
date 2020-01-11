@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "AddTest";
+}
+
+
+    <h1 class="display-4">Welcome this is first add test form</h1>
+    <hr>
+    <form action="insertest" method="post">
+    
+    <div class="form-group">
+        <label for="testtitle">Test Title</label>
+        <input  type="text" class="form-control" id="testtitle" aria-describedby="testtitleHelp" placeholder="Enter Test Title" name="testname">
+        <small id="testtitleHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    
+    <div class="form-group">
+        <label for="testtype">Test Type</label>
+        <input  type="text" class="form-control" id="testtype" aria-describedby="testtypeHelp" placeholder="Enter Test Type" name="testtype">
+        <small id="testtypeHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="testxpath1">Element Xpath1</label>
+        <input  type="text" class="form-control" id="testxpath1" aria-describedby="testxpath1Help" placeholder="Enter Test Xpath1" name="testxpath1">
+        <small id="testxpath1Help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="testxpath2">Element Xpath2</label>
+        <input  type="text" class="form-control" id="testxpath2" aria-describedby="testxpath2Help" placeholder="Enter Test Xpath2" name="testxpath2">
+        <small id="testxpath2Help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="teststatus">Test Status</label>
+        <input  type="text" class="form-control" id="teststatus" aria-describedby="testxpath2Help" placeholder="Enter Test Status" name="teststatus">
+        <small id="teststatus" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+

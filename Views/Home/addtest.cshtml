@@ -6,38 +6,39 @@
 
     <h1 class="display-4">Welcome this is first add test form</h1>
     <hr>
-    <form action="insertest" method="post">
+    @using (Html.BeginForm("insertest", "Home", FormMethod.Post))
+    {
     @Html.ValidationSummary(true)
     <div class="form-group">
-       @Html.LabelFor(Model => Model.testname)
-       @Html.TextBox("testname", null, new { @class = "form-control", @placeholder="Enter Test Title"})
-        <small id="testname" class="form-text text-danger">@Html.ValidationMessageFor(Model => Model.testname)</small>
+        @Html.LabelFor(Model => Model.testname)
+        @Html.TextBox("testname", null, new { @class = "form-control", @placeholder="Enter Test Title"})
+        @Html.ValidationMessageFor(Model => Model.testname , null, new { @class = "form-text text-danger"})
     </div>
     
     <div class="form-group">
         @Html.LabelFor(Model => Model.testtype)
         @Html.TextBox("testtype", null, new { @class = "form-control", @placeholder="Enter Test Type"})
-        <small id="testtype" class="form-text text-danger">@Html.ValidationMessageFor(Model => Model.testname)</small>
+        @Html.ValidationMessageFor(Model => Model.testtype , null, new { @class = "form-text text-danger"})
     </div>
 
     <div class="form-group">
         @Html.LabelFor(Model => Model.testxpath1)
         @Html.TextBox("testxpath1", null, new { @class = "form-control", @placeholder="Enter Test Xpath1"})
-        <small id="testxpath1" class="form-text text-danger">@Html.ValidationMessageFor(Model => Model.testname)</small>
+        @Html.ValidationMessageFor(Model => Model.testxpath1 , null, new { @class = "form-text text-danger"})
     </div>
 
     <div class="form-group">
         @Html.LabelFor(Model => Model.testxpath2)
         @Html.TextBox("testxpath2", null, new { @class = "form-control", @placeholder="Enter Test Xpath2"})
-        <small id="testxpath2" class="form-text text-danger">@Html.ValidationMessageFor(Model => Model.testname)</small>
+        @Html.ValidationMessageFor(Model => Model.testxpath2 , null, new { @class = "form-text text-danger"})
     </div>
 
     <div class="form-group">
         @Html.LabelFor(Model => Model.teststatus)  
         @Html.TextBox("teststatus", null, new { @class = "form-control", @placeholder="Enter Test Status"})
-        <small id="teststatus" class="form-text text-danger">@Html.ValidationMessageFor(Model => Model.teststatus)</small>
+        @Html.ValidationMessageFor(Model => Model.teststatus , null, new { @class = "form-text text-danger"})
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
     
-    </form>
+    }
